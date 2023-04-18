@@ -39,7 +39,18 @@ Aken(250,300,100,100,pind,majavarv)
 pygame.display.flip()
 
 for i in range(10):
-
+   #värv
+    r=random.randint(0,255)
+    g=random.randint(0,255)
+    b=random.randint(0,255)
+    varv=[r,g,b]
+    #suurus
+    laius=random.randint(1,80)
+    kõrgus=random.randint(1,80)
+    #asukoht
+    x=random.randint(0,640-laius)
+    y=random.randint(0,450-kõrgus)
+    pygame.draw.rect(pind,varv,[x,y,laius,kõrgus])
 
 
     kaka4=pygame.Rect(298,197,100,200)
